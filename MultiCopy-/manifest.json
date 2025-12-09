@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "MultiCopy",
+  "version": "0.9.2",
+  "description": "Allows you to append multiple copy commands together. Copy sections of text with CTRL + SHIFT + C then combine them with CTRL + SHIFT + V and paste like normal. CTRL+SHIFT+X to clear",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "clipboardWrite",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "commands": {
+    "add_selection": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C"
+      },
+      "description": "Appends copied text to clipboard"
+    },
+    "copy_combined": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+V"
+      },
+      "description": "Combines copied text and makes it pastable."
+    },
+    "clear_buffer": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "Clears"
+    }
+
+    //Future functionality: Autoclearing when pasted
+    //toggles for timed clearing
+  }
+}
