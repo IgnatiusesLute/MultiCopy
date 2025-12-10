@@ -38,7 +38,7 @@
       },
       "description": "Clears"
     },
-    "toggle_clear_mod": {
+    "toggle_clear_mode": {
       "suggested_key": {
         "default": "Ctrl+Shift+M"
       },
@@ -47,5 +47,7 @@
 
     
     // add toggles for timed clearing??
+    //could be nice to have stack/queue functionality for copying and pasting
   }
 }
+
