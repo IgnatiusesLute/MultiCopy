@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "MultiCopy",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Allows you to append multiple copy commands together. Copy sections of text with CTRL + SHIFT + C then combine them with CTRL + SHIFT + V and paste like normal. CTRL+SHIFT+X to clear",
   "permissions": [
     "scripting",
@@ -37,9 +37,15 @@
         "default": "Ctrl+Shift+X"
       },
       "description": "Clears"
+    },
+    "toggle_clear_mod": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+M"
+      },
+      "description":  "Toggles a 'clear after copy' mode"
     }
 
-    //Future functionality: Autoclearing when pasted
-    //toggles for timed clearing
+    
+    // add toggles for timed clearing??
   }
 }
