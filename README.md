@@ -1,4 +1,4 @@
-OUTDATED, and ABANDONDED for SuperCopy
+2/9/2026 OUTDATED, and ABANDONDED for SuperCopy which has more functionality
 
 # MultiCopy
 Extension for chrome. Appends each copy together
